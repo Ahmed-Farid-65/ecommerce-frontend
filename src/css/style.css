@@ -476,6 +476,137 @@ input[type=email], input[type="number" ]{
 }
 
 
+
+
+/*******************************************************************************************  
+PRODUCT PAGE
+****************************************************************************************************/
+
+.custom-breadcrumb {
+    background-color: transparent;
+    padding: 25px 0;
+}
+.custom-breadcrumb a {
+    color: #555555;
+    text-decoration: none;
+}
+.custom-breadcrumb a:hover {
+    color: #f8ad47;
+}
+.custom-breadcrumb li.active {
+    color: #bfbfbf;
+}
+
+/* صورة المنتج */
+#carousel-product-image .carousel-indicators {
+    position: relative;
+    top: -35px;
+    right: 0;
+}
+#carousel-product-image .carousel-item img {
+    border: 1px solid #ebebeb;
+    width: 100%;
+}
+
+.block-100 {
+    width: 100%;
+    display: block;
+}
+.product-category {
+    color: #a9a9a9;
+}
+#form-product-selection h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 18px 0 18px;
+}
+.price.large {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.borders-between>div+div {
+    border-top: 1px solid #ebebeb;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.product-option {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #ebebeb;
+    color: #c2c2c2;
+    margin: 3px 3px 9px 3px;
+    text-align: center;
+}
+.product-option input {
+    display: none;
+}
+.product-option label {
+    font-weight: bold;
+    display: inline-block;
+}
+.product-option.active {
+    color: #f8ad47;
+    border-color: #f8ad47;
+}
+.color-option.active {
+    border-color: #fff;
+    outline: #000 solid 1px;
+}
+.product-quantity select {
+    width: 56px;
+    height: 34px !important;
+    padding: 6px 12px;
+    margin-right: 3px;
+}
+.product-quantity .label {
+    padding-top: 10px;
+}
+.product-quantity {
+    margin-bottom: 20px;
+}
+.custom-btn-with-icon {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* وصف المنتج */
+.heading-with-border-bottom {
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 15px;
+}
+.heading-inline {
+    display: inline-block;
+    min-width: 250px;
+}
+
+/* التعليقات على المنتج */
+.comments .media {
+    margin: 15px;
+}
+.comments .media img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border: 1px solid #dfdfdf;
+}
+.comments .media .media-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* المقترح */
+.suggestions .custom-thumbnail {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+/*******************************************************************************************  
+MEDIA QUERY
+****************************************************************************************************/
+
 @media (max-width: 575px) { 
     .form-inline.custom-form-control {
         width: 90%;
@@ -488,6 +619,10 @@ input[type=email], input[type="number" ]{
     }
     #footer #brand-logos .img-container img {
         margin: 5px 15px;
+    }
+    #form-product-selection, .comments {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -603,6 +738,16 @@ input[type=email], input[type="number" ]{
         font-size: 150%;
         margin-top: 10px;
     }
+
+    /* product page */
+    .product-option {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
 }
 
 
