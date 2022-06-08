@@ -359,7 +359,7 @@ h3.custom-heading {
     margin-top: 0;
     margin-bottom: 15px;
 }
-.custtom-text-muted {
+.custom-text-muted {
     color: #a9a9a9;
 }
 .custom-arrow-btn {
@@ -603,6 +603,84 @@ PRODUCT PAGE
     margin-right: -8px;
     margin-left: -8px;
 }
+
+/*******************************************************************************************  
+CHECKOUT PAGE
+****************************************************************************************************/
+#form-checkout , .custom-table {
+    width: 100%;
+}
+h1.custom-heading {
+    font-size: 36px;
+    margin: 25px 0;
+}
+.custom-table th, .custom-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    font-size: 120%;
+    text-align: center;
+}
+.custom-table th:first-child,
+.custom-table td:first-child {
+    width: 50%;
+    text-align: right;
+}
+.custom-table th {
+    color: #c2c2c2;
+    font-weight: normal;
+}
+.custom-table th:first-child{
+    padding-right: 20px;
+}
+.custom-table .custom-media {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.custom-table .custom-media img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    margin-left: 10px;
+}
+.custom-table .custom-media h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+.custom-table .quantity {
+    width: 56px;
+    height: 34px !important;
+    padding: 0px 8px;
+    text-align: center;
+    margin: auto;
+}
+.custom-btn-danger {
+    color: #ff5a5f;
+    border-color: #ff5a5f;
+    background-color: transparent;
+    border-radius: 3px;
+}
+.custom-btn-danger:hover,
+.custom-btn-danger:active,
+.custom-btn-danger:focus,
+.custom-btn-danger:active:focus,
+.custom-btn-danger:active:hover {
+    background-color: transparent;
+    border-color: #c2101e;
+    color: #c2101e;
+}
+
+.custom-table tfoot td {
+    border-bottom: none;
+    font-size: 150%;
+}
+.custom-table .total-price *{
+     color: #000;
+ }
+.custom-table .total-price .custom-text-muted .custom-text-muted {
+    color: #a9a9a9;
+}
 /*******************************************************************************************  
 MEDIA QUERY
 ****************************************************************************************************/
@@ -623,6 +701,11 @@ MEDIA QUERY
     #form-product-selection, .comments {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    /* CHECKOUT PAGE */
+    .hide-on-small {
+        display: none;
     }
 }
 
