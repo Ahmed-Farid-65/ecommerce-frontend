@@ -62,4 +62,48 @@ $(function () {
         // حدث السعر الاجالي لكل المنتجات في الصفحه
         $('#total-price-for-all-products').text(totalPriceForAllProducts + '');
     }
+
+    var citiesByCountry = {
+        su: ['جده', 'المدينه'],
+        eg: ['القاهرة' , 'الاسكندرية'],
+        pl: ['القدس','حيفا'],
+        it: ['ميلان','روما']
+    };
+    // عندما تغير البلد
+    $('#form-checkout select[name="country"]').change(function() {
+        var country = $(this).val();
+
+        var cities = citiesByCountry[country];
+
+        $('#form-checkout select[name="city"]').empty();
+
+        $('#form-checkout select[name="city"]').append(
+            '<option disabled selected value="">اختر المدينة</option>'
+        );
+
+        cities.forEach(function(city) {
+            var newOption = $('<option></option>');
+            newOption.text(city);
+            newOption.val(city);
+            $('#form-checkout select[name="city"]').append(newOption);
+        });
+    });
+
+    // عندما تتغير طريقة الدفع
+    $('#form-checkout input[name="payment-method"]').change(function(){
+        // اجلب القيمة المختارة حاليا
+        var paymentMethod = $(this).val();
+
+        if (paymentMethod === 'om-delivary') {
+            // اذا كانت عند الاستلام فعطل حقول بطاقة الائتمان
+            $('#cerdit-card-info input').prop('disabled', true);
+        }
+        else {
+            // والا فعلها
+            $('#credit-card-info input').prop('disabled', false);
+        }
+
+        // بدل معلومات بطاقة الائتمان بين الظهور والاخفاء
+        $('#credit-card-info').toggle();
+    });
 });

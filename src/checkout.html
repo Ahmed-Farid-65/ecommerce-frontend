@@ -116,7 +116,7 @@
                 <!-- قسم عربة الشراء -->
                 <div class="row flex-column">
                     <h1 class="custom-heading">عربة الشراء</h1>
-                    <form id="form-checkout">
+                    <form id="form-checkout" action="payment.html" method="get">
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -144,6 +144,7 @@
                                         400$
                                     </td>
                                     <td>
+                                        <input type="hidden" name="product1" value="تيشرت رجالى من لاكوست">
                                         <select  name="quantity1" class="form-control custom-form-control quantity" data-product-quantity>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -176,6 +177,7 @@
                                         300$
                                     </td>
                                     <td>
+                                        <input type="hidden" name="product2" value="تيشرت اديدس">
                                         <select name="quantity1" class="form-control custom-form-control quantity" data-product-quantity>
                                             <option value="1" selected>1</option>
                                             <option value="2">2</option>
@@ -207,7 +209,7 @@
                                 </tr>
                             </tfoot>
                         </table>
-                        <button type="button" class="btn custom-btn-primary2 custom-btn-with-icon">
+                        <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon">
                             <span>
                                 اكمال عملية الشراء 
                                 <i class="fa-solid fa-dollar-sign"></i>
