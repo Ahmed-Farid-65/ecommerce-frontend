@@ -15,7 +15,9 @@ body {
     line-height: 1.429;
 
 }
-
+ .heading-with-border-bottom {
+    margin-bottom: 20px;
+ }
 /* شريط التنقل */
 .custom-navbar {
     border-bottom: 3px solid #eef0ea;
@@ -784,6 +786,35 @@ SEARCH PAGE
     justify-content: center;
 }
 
+/*******************************************************************************************  
+CONTACT PAGE
+****************************************************************************************************/
+#map {
+    padding: 0;
+}
+#contact-options {
+    margin-bottom: 25px;
+}
+#contact-options h4 {
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+#contact-info {
+    padding-bottom: 25px;
+}
+#contact-info .fa-lg {
+    color: #f3af41;
+    font-size: 18px;
+    margin: 10px 10px 2px 10px;
+    width: 25px;
+    text-align: center;
+}
+#contact-options textarea {
+    height: 128px !important;
+}
+
+
+
 /**************************************************************************************  
 MEDIA QUERY
 ****************************************************************************************************/
@@ -843,6 +874,11 @@ MEDIA QUERY
     }
     #footer-nav form .input-group {
         width: 100%;
+    }
+
+    /* contact page */
+    #form-subscription {
+        margin-bottom: 40px;
     }
 }
 
