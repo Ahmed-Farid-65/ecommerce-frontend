@@ -40,7 +40,7 @@ module.exports = {
             ],
           },
           {
-            test: /\.css$/i,
+            test: /\.(sa|sc|c)ss$/,
             use: [
                 {
                   loader: MiniCssExtractPlugin.loader,
@@ -48,7 +48,8 @@ module.exports = {
                     publicPath: "../",
                   },
                 },
-                "css-loader"
+                "css-loader",
+                "sass-loader"
             ],
           },
           {

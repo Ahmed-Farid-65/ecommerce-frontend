@@ -1,0 +1,77 @@
+@import './variables';
+@import './custom-table';
+@import './mixins';
+@import './slider';
+@import './sale.scss';
+@import './custom.scss';
+
+.custom-form-control, .custom-btn {
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 2px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    padding: 6px 16px 7px 16px;
+    color: #868686;
+}
+#footer .custom-btn:hover {
+    background-color: $barnd-primary;
+    border: 1px solid $barnd-primary;
+    color: $btn-primary-color-dark;
+}
+.custom-navbar .container .custom-form-control:focus {
+    border-color: $btn-danger-color-dark;
+    box-shadow: 0 0 2px 0 $btn-danger-color-dark;
+}
+.custom-btn:hover {
+    background-color: #d4d4d4;
+    border: 1px solid #8c8c8c;
+    color: $btn-primary-color-dark;
+}
+
+#carousel-featured .product-details .custom-btn-primary {
+    // color: $barnd-primary;
+    // border-color: $barnd-primary;
+    // background-color: transparent;
+    padding: 9px 25px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-top: 15px;
+    @include button-style($barnd-primary);
+}
+
+.custom-btn-primary2 {
+    color: #000;
+    background-color: $barnd-primary;
+    border-color: $barnd-primary;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus,
+    &:active:hover {
+    background-color: $btn-primary-color-dark;
+    border-color: $btn-primary-color-dark;
+    color: #000;
+    }
+    
+}
+
+
+.custom-btn-danger {
+    // color: $barnd-danger;
+    // border-color: $barnd-danger;
+    // background-color: transparent;
+    // border-radius: 3px;
+
+    // &:hover,
+    // &:active,
+    // &:focus,
+    // &:active:focus,
+    // &:active:hover {
+    // background-color: transparent;
+    // border-color: $btn-danger-color-dark;
+    // color: $btn-danger-color-dark;
+    // }
+    @include button-style($barnd-danger);
+}
